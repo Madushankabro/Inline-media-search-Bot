@@ -1,0 +1,11 @@
+https://github.com/Mahesh0253/pyrogram/archive/inline.zip
+pymongo
+umongo
+TgCrypto
+dnspython
+aiofiles
+motor
+Pillow
+hachoir
+pyromod
+psutil

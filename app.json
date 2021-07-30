@@ -1,0 +1,134 @@
+{
+    "name": "Inline search bot  Search Bot",
+    "description": "When you going to send file on telegram channel/group this bot will save that in database, So you can search that easily in inline mode",
+    "logo": "https://telegra.ph/file/6b258ec64297754f15bf4.jpg",
+    "keywords": [
+      "telegram",
+      "best",
+      "srilankan",
+      "pyrogram",
+      "media",
+      "search",
+      "channel",
+      "index",
+      "inline"
+    ],
+    "website": "https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA",
+    "repository": "https://github.com/Naviya2/LeoMediaSearchBot",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token.",
+            "value": ""
+        },
+        "USERBOT_STRING_SESSION": {
+            "description": "User bot string session.",
+            "value": "sdbotz",
+            "required": false
+        },
+        "SESSION": {
+            "description": "Session name for db.if u are already user of old media search bot. please type here that bot's session name. it can be found info.py file as SESSION",
+            "required": true
+        },
+        "APP_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "BOT_OWNER": {
+            "description": "Bot Owner UserID"
+        },
+        "BOT_USERNAME":{
+            "description": "Bot username without @"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "ID of a Channel which you want to do Force Sub to use the bot. Example: -100123456789",
+            "required": false
+        },
+        "LOG_CHANNEL": {
+            "description": "Logs Channel ID for some Tracking XD. Example: -100123456789"
+        },
+        "BROADCAST_AS_COPY": {
+            "description": "Broadcast as Copy or with Forward Tag. Value should be True/False."
+        },
+        "SESSION_NAME": {
+            "description": "Any Bot Session Name for Save Users in db.",
+            "required": false
+        },
+        "CHANNELS": {
+            "description": "Username or ID of database channel or group. Separate multiple IDs by space.",
+            "value": ""
+        },
+        "ADMINS": {
+            "description": "Username or ID of Admin. Separate multiple Admins by space.",
+            "value": ""
+        },
+        "AUTH_USERS": {
+            "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
+            "value": "",
+            "required": false
+        },
+        "BANNED_USERS": {
+            "description": "Banned users user id , these users are banned from the bot permenentally",
+            "required": false
+        },
+        "START_MSG": {
+            "description": "A Massege for view at start. If you want to change it you can change it here",
+            "value": "**Hi {}👋\n\nI'm Mod app  Bot**\n\nYou can start searching by the 'Search Mod app  🔎' button below 😊",
+            "required": false
+        },
+        "SHARE_BUTTON_TEXT": {
+            "description": "A Massege for add to share button. If you want to change it you can change it here",
+            "value": "**Mod app  Search Bot 🇱🇰**\n\n`Here you can find any Mod app  by searching its name 😊´\n\nBot : {username} 🤖\nSupport Group : @slbotzone 🇱🇰\nUpdates Channel: @sl_bot_zone 🇱🇰\nDevelopper : @supunma 🇱🇰",
+            "required": false
+        },
+        "USE_CAPTION_FILTER": {
+            "description": "Whether bot should use captions to improve search results. (True False)",
+            "value": "False",
+            "required": false
+        },
+        "DATABASE_URI": {
+            "description": "This is the db which use to save files to work inline search.. get it from mongodb.com",
+            "value": "",
+            "required": true
+        },
+        "MONGODB_URI": {
+            "description": "mongo based db for save users in db .. Dont use the inline search bots database URI",
+            "required": true
+        },
+        "DATABASE_NAME": {
+            "description": "Name of the database in mongoDB.",
+            "value": "",
+            "required": true
+        },
+        "COLLECTION_NAME": {
+            "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
+            "value": "Telegram_files",
+            "required": false
+        },
+        "MAX_RESULTS": {
+            "description": "Maximum limit for inline search results",
+            "value": "10",
+            "required": false
+        },
+        "CACHE_TIME": {
+            "description": "The maximum amount of time in seconds that the result of the inline query may be cached on the server",
+            "value": "300",
+            "required": false
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
