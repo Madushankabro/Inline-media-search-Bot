@@ -1,4 +1,4 @@
-<h1 align="center"><b>Mod app Search Bot 🇱🇰</b></h1>
+<h1 align="center"><b>Inline media search Bot 🇱🇰</b></h1>
 
 # Features 
 
